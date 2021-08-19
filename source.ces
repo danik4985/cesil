@@ -1,0 +1,41 @@
+        LOAD    +0
+LOOP    STORE   TOTAL
+        IN
+        JINEG   DONE
+        ADD     TOTAL
+        JUMP    LOOP
+
+DONE    PRINT   "The total is: "
+        LOAD    TOTAL
+        OUT
+        LINE
+        HALT
+
+%
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+-1
+*
