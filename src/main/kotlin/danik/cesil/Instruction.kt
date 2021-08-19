@@ -1,14 +1,14 @@
 package danik.cesil
 
-class Instruction(parse: Array<String>) {
+class Instruction(arr: Array<String>) {
 	lateinit var name: String
 	lateinit var argument: Any
 
 	init {
-		// println(danik.cesil.parse.contentToString())
+		// println(arr.contentToString())
 
-		val cmd = parse[0]
-		val arg = if (parse.size == 1) "" else parse[1]
+		val cmd = arr[0]
+		val arg = if (arr.size == 1) "" else arr[1]
 
 		when (cmd) {
 			"IN", "OUT", "LINE" -> {
