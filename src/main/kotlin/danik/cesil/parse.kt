@@ -11,7 +11,7 @@ fun parse(path: String): ParsedData {
 	var line = -1
 
 	File(path).forEachLine { i ->
-		if (i.trim() == "" && i.startsWith('*')) return@forEachLine
+		if (i.trim() == "" && i.startsWith('(')) return@forEachLine
 		line++
 
 		if (i == "*") {
